@@ -1,6 +1,6 @@
 SimpleSVG v0.1.0
 
-Simple javascript library for svg
+Simple javascript svg library
 
 Browser Support
 IE 9+
