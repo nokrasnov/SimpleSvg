@@ -23,3 +23,24 @@ API
 - remove: remove the set of matched elements from the DOM;
 - select: select elements from the DOM;
 - text: get the combined text contents of each element in the set of matched elements or set the content of each element in the set of matched elements to the specified text;
+
+Sample
+Sample of creating SVG rectangle
+<div id="container"></div>
+<script>
+    SimpleSvg.select('#container').append('svg').attr({
+        'id': 'svg',
+        'width': 400,
+        'height': 400
+    });
+    SimpleSvg.select("#svg").append('rect').attr({
+        'y': 10,
+        'x': 10,
+        'width': '300',
+        'height': '100'
+    }).css({
+        'fill': 'rgb(0,0,255)',
+        'stroke-width': 10,
+        'stroke': 'rgb(0,0,0)'
+    });
+</script>
