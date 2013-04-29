@@ -205,11 +205,7 @@
                 elements.context = this[0];
             }
             if (match[1]) {
-                if (elements.context === doc) {
-                    elements[0] = doc.getElementById(match[1]);
-                } else {
-                    elements[0] = elements.context.querySelector(match[0]);
-                }
+                elements[0] = doc.getElementById(match[1]);
                 elements.length = elements[0] ? 1 : 0;
             } else if (match[2])  {
                 if (elements.context === doc) {

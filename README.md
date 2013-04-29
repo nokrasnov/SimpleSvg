@@ -1,4 +1,4 @@
-SimpleSVG v0.1.0
+SimpleSVG v0.1.1
 
 Simple javascript svg library
 
