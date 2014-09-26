@@ -188,7 +188,7 @@
         }
 
         var elements = new S();
-        elements.context = this.context ? this.context : doc;
+        elements.context = (this && this.context) ? this.context : doc;
         elements.selector = selector;
         elements.length = 0;
 
